@@ -1,7 +1,82 @@
-h3{
+h3, h4, li {
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
+.navbar{
+    background-color: #045757;
+
+}
+
+
+body {
+    background-image: url("/img/geometric-3.png"), url("/img/solid-grey-bg.svg");
+    background-attachment: fixed;
+    background-position: left bottom, center;
+    background-repeat: no-repeat;
+}
+
+/*.parallax {*/
+/*     !* The image used *!*/
+/*     background-image: url("img_parallax.jpg");*/
+
+/*     !* Set a specific height *!*/
+/*     min-height: 500px;*/
+
+/*     !* Create the parallax scrolling effect *!*/
+/*     background-attachment: fixed;*/
+/*     background-position: center;*/
+/*     background-repeat: no-repeat;*/
+/*     background-size: cover;*/
+/* }*/
+
+
+@media (min-width: 768px) {
+    #nav-div {
+      width: 35%;
+
+    }
+}
+#projects{
+    width: 90%;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+footer{
+    margin-top: 5em;
+}
+
+#about-me{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-photo{
+    width: 200px;
+    height: 200px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+#languages{
+
+}
+
+
+/*.reveal{*/
+/*    position: relative;*/
+/*    transform: translateY(150px);*/
+/*    opacity: 0;*/
+/*    transition: 2s all ease;*/
+/*}*/
+/*.reveal.active{*/
+/*    transform: translateY(0);*/
+/*    opacity: 1;*/
+/*}*/
