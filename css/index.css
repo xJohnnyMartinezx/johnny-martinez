@@ -57,17 +57,42 @@ footer{
     text-align: center;
 }
 
-.profile-photo{
+#large-photo{
     width: 200px;
     height: 200px;
     margin-top: 2em;
     margin-bottom: 2em;
 
+
+}
+
+#profile-photo-nav{
+
+}
+
+.reveal{
+display: none;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-brand{
+    display: none;
+    transition: all .5s ease-in-out;
 }
 
 #languages{
 
 }
+
+.carousel-inner:hover {
+}
+
+.carousel-inner:hover {
+    box-shadow: 0 10px 20px 10px;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
 
 
 /*.reveal{*/
