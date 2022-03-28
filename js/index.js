@@ -25,8 +25,7 @@ $(document).ready(function () {
     $(document).on("scroll", function () {
 
         const scrolled = window.scrollY;
-        const sweetSpot = 265
-        // console.log(scrolled);
+        const sweetSpot = 500        // console.log(scrolled);
 
         if (Math.ceil(scrolled) >= sweetSpot) {
             var photo = document.getElementById("profile-photo-nav")
@@ -34,18 +33,20 @@ $(document).ready(function () {
         } else {
             var photo = document.getElementById("profile-photo-nav")
             photo.classList.add("reveal")
+            photo.classList.add("revealAni")
         }
     })
 
     $(document).on("scroll", function () {
 
         const scrolled = window.scrollY;
-        const sweetSpot = 265
+        const sweetSpot = 500
         // console.log(scrolled);
 
         if (Math.ceil(scrolled) >= sweetSpot) {
             var name = document.getElementById("navbar-name")
-            name.classList.remove("navbar-brand")
+            name.classList.remove("navbar-brand");
+
         } else {
             var name = document.getElementById("navbar-name")
             name.classList.add("navbar-brand")
