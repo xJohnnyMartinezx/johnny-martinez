@@ -25,32 +25,37 @@ $(document).ready(function () {
     $(document).on("scroll", function () {
 
         const scrolled = window.scrollY;
-        const sweetSpot = 500        // console.log(scrolled);
+        const sweetSpot = 550        // console.log(scrolled);
 
         if (Math.ceil(scrolled) >= sweetSpot) {
             var photo = document.getElementById("profile-photo-nav")
+            var name = document.getElementById("reveal-name")
             photo.classList.remove("reveal")
+            name.classList.remove("reveal")
         } else {
             var photo = document.getElementById("profile-photo-nav")
+            var name = document.getElementById("reveal-name")
             photo.classList.add("reveal")
-            photo.classList.add("revealAni")
+            name.classList.add("reveal")
         }
     })
 
-    $(document).on("scroll", function () {
+    var toggleBtn = document.getElementById("btn-trigger")
+    console.log(toggleBtn);
 
-        const scrolled = window.scrollY;
-        const sweetSpot = 500
-        // console.log(scrolled);
+    toggleBtn.addEventListener("click", function () {
 
-        if (Math.ceil(scrolled) >= sweetSpot) {
-            var name = document.getElementById("navbar-name")
-            name.classList.remove("navbar-brand");
+        var name = document.getElementById("image")
+            name.classList.toggle("hidden-profile");
 
-        } else {
-            var name = document.getElementById("navbar-name")
-            name.classList.add("navbar-brand")
-        }
+        // if (toggleBtn === true) {
+        //     var name = document.getElementById("image")
+        //     name.classList.add("hidden-profile");
+        //
+        // } else {
+        //     var name = document.getElementById("image")
+        //     name.classList.remove("hidden-profile")
+        // }
 
     })
 
