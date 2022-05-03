@@ -59,5 +59,44 @@ $(document).ready(function () {
 
     })
 
+    const largeProfileImg = document.querySelectorAll(".hidden-profile")
+
+    const largeProfileImgObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry =>{
+            entry.target.classList.toggle("hidden-profile", entry.isIntersecting)
+        }, {
+            threshold: 1,
+        } )
+        console.log(entries)
+    })
+    largeProfileImgObserver.observe(largeProfileImg[0])
+
+    //-----------------------ONSCROLL LINE ANIMATIONS TOGGLE----------------------
+    const aniLines = document.querySelectorAll(".divider")
+
+    const lineObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry =>{
+            entry.target.classList.toggle("divider", entry.isIntersecting)
+        })
+        // console.log(entries)
+    }, {
+        threshold: 1,
+    } )
+    lineObserver.observe(aniLines[0])
+
+
+
+    const aniLines2 = document.querySelectorAll(".divider-2")
+
+    const lineObserver2 = new IntersectionObserver(entries => {
+        entries.forEach(entry =>{
+            entry.target.classList.toggle("divider-2", entry.isIntersecting)
+        })
+        // console.log(entries)
+    }, {
+        threshold: 1,
+    } )
+    lineObserver2.observe(aniLines2[0])
+
 
 })
