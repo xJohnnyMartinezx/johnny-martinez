@@ -101,10 +101,18 @@ display: flex;
 
 }
 
-#large-photo{
+/*.hidden-profile{*/
+/*    animation-duration: 3s;*/
+/*    animation-name: slidein;*/
+/*}*/
+
+.large-photo{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: .5em;
+    animation-duration: 3s;
+    animation-name: slidein;
+
 }
 .intro-line{
     font-family: 'Nunito', sans-serif;
@@ -186,9 +194,9 @@ display: flex;
     margin-bottom: 1em;
 }
 
-.hidden-profile {
-    visibility: hidden;
-}
+/*.hidden-profile {*/
+/*    visibility: hidden;*/
+/*}*/
 
 /*.parallax {*/
 /*     !* The image used *!*/
